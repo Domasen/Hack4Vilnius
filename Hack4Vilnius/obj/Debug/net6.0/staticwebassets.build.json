@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rl20vLopdoGqWmg74LhEnFLflnfjzdIVxGd6izNTGvs=",
+  "Hash": "BnlsgpC6ekhsmEM+DhzPSr9JXyNcNka4AHqb+xelU7Q=",
   "Source": "Hack4Vilnius",
   "BasePath": "_content/Hack4Vilnius",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\img\\blank_profile.jpg"
     },
     {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\kalendorius.jpg",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "img/kalendorius.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\kalendorius.jpg"
+    },
+    {
       "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\pokalbiai.jpg",
       "SourceId": "Hack4Vilnius",
       "SourceType": "Discovered",
@@ -168,6 +185,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\profile2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\spalva.jpg",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "img/spalva.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\spalva.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\spalva1.jpg",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "img/spalva1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\spalva1.jpg"
     },
     {
       "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\js\\site.js",
