@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\kamil\\.nuget\\packages\\": {}
+    "C:\\Users\\Domas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\Hack4Vilnius.csproj",
+      "projectUniqueName": "C:\\Users\\Domas\\Desktop\\Hack4Vilnius\\solution\\Hack4Vilnius\\Hack4Vilnius.csproj",
       "projectName": "Hack4Vilnius",
-      "projectPath": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\Hack4Vilnius.csproj",
-      "packagesPath": "C:\\Users\\kamil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\obj\\",
+      "projectPath": "C:\\Users\\Domas\\Desktop\\Hack4Vilnius\\solution\\Hack4Vilnius\\Hack4Vilnius.csproj",
+      "packagesPath": "C:\\Users\\Domas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Domas\\Desktop\\Hack4Vilnius\\solution\\Hack4Vilnius\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kamil\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Domas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -62,7 +62,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\kamil\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Domas\\.dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
