@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KwZGppY4aqwCJh+66EbzAK9wnrzEH4vJZ76arBdhByE=",
+  "Hash": "+ch6B5oxX0olBqVI7g9q3RhQBLfltmD1bojyrJ8d0jc=",
   "Source": "Hack4Vilnius",
   "BasePath": "_content/Hack4Vilnius",
   "Mode": "Default",
@@ -1290,6 +1290,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\tick.png",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "tick.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\tick.png"
     }
   ]
 }

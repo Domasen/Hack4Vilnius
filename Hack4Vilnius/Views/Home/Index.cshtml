@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
+<div class="text-center" xmlns="http://www.w3.org/1999/html">
     <img src="~/img/logobaltas.jpg" alt="user" width=30% height=30%>
 </div>   
 
@@ -30,20 +30,58 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <input type="text" class="form-control mt-2" placeholder="Vieta iš kur vykstama:" required>
+                                <input type="text" class="form-control mt-2" placeholder="Pradžios taškas" required>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" style="padding-bottom: 10px">
                             <div class="form-group">
-                                <input type="text" class="form-control mt-2" placeholder="Vieta į kur vykstama:" required>
+                                <input type="text" class="form-control mt-2" placeholder="Kelionės tikslas" required>
                             </div>
                         </div>
-                        <br><br>
-                        <br><br>
                     </div>
-                    <div class="col-12">
-                        <button class="btn btn-light" type="submit" id="submitBtn">Patvirtinti</button>
-                    </div>
+                <div class="col-12">
+                    <button class="btn btn-light" type="submit" id="submitBtn">Patvirtinti</button>
+                </div>
+                <div>
+                     <table id="tableId">
+                      <tr>
+                        <th>Vežėjas</th>
+                          <th>Rajonas (iš kur)</th>
+                          <th>Laikas ir data</th>
+                          <th></th>
+                      </tr>
+                      <tr>
+                          <td style="padding: 3px">A. Antanaitis</td>
+                          <td>Žirmūnai</td>
+                          <td>8:00 10-02</td>
+                          <td style="padding-bottom: 30px; padding-top: 10px">
+                              <button type="submit" class="accept" id="openDialog" onclick="openPopup()">Pasirinkti</button>
+                              <div class="popup" id="popup">
+                                  <img src="tick.png"/>
+                                  <h2>Vežėjas pasirinktas!</h2>
+                                  <p> A. Antanaitis jau pakeliui!</p>
+                                  <button type="button" onclick="closePopup()">Gerai</button>
+                              </div>
+                          </td>
+                      </tr>
+                     <tr>
+                         <td>J. Janinienė</td>
+                         <td>Žirmūnai</td>
+                         <td>9:20 10-03</td>
+                         <td style="padding-bottom: 30px">
+                             <button class="accept">Pasirinkti</button>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>O. Odetienė</td>
+                         <td>Žirmūnai</td>
+                         <td>9:30 10-05</td>
+                         <td style="padding-bottom: 30px">
+                             <button href="#" class="accept">Pasirinkti</button>
+                         </td>
+                     </tr>
+                    </table> 
+                </div>
                     
                 @* </form> *@
             </div>
@@ -55,7 +93,17 @@
         let markersArray = []
         const mapId = document.getElementById("map");
         const submitBtn = document.getElementById("submitBtn");
-        var i = 0;
+        const openBtn = document.getElementById("openDialog");
+        const popup = document.getElementById("popup");
+        
+        function openPopup(){
+           popup.classList.add("open-popup");
+        }
+        
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+        
         
         function initMap() {
           
@@ -70,22 +118,45 @@
           });
           
           submitBtn.addEventListener('click', function (e){
-             coord = {lat: 54.727, lng: 25.267};
+             var coord = {lat: 54.727, lng: 25.267};
+             
+             
+             var directionsDisplay = new google.maps.DirectionsRenderer();
+             var directionsService = new google.maps.DirectionsService();
             
-                map = new google.maps.Map(mapId, {
+             map = new google.maps.Map(mapId, {
                 center: coord,
                 zoom: 11
-                }); 
+             }); 
+             
+             directionsDisplay.setMap(map);
+               
+               var x = document.getElementById("tableId");
+               
+               var start = {lat: 54.757, lng: 25.235};
+               var end = {lat: 54.714, lng: 25.308};
+               var request = {
+                 origin: start,
+                 destination: end,
+                 travelMode: 'DRIVING'
+               };
+             
+               directionsService.route(request, function(response, status) {
+                 if (status == 'OK') {
+                   directionsDisplay.setDirections(response);
+                   x.style.display = "block"
+                 } else {
+                   alert("directions request failed, status=" + status)
+                 }
+               });
               
-              addMarker({lat: 54.757, lng: 25.235});
-              addMarker({lat: 54.714, lng: 25.308});
+             // addMarker(start);
+             // addMarker(end);
           });
           
         }
         
         function addMarker(latLng) {
-            
-            
             
             let marker = new google.maps.Marker({
                 map: map,
@@ -95,6 +166,8 @@
             
             markersArray.push(marker);
         }
+        
+        
     </script>
 </body>
 
