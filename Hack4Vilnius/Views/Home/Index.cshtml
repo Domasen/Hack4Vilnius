@@ -8,7 +8,7 @@
 
 
 <link rel="stylesheet" type="text/css" href="./site.css" />
-    <script type="module" src="~/js/index.js"></script>
+    @* <script type="module" src="~/js/index.js"></script> *@
 <!------ Include the above in your HEAD tag ---------->
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -26,7 +26,7 @@
             </div>
             <div class="col-md-6">
                 <h2 class="text-uppercase mt-3 font-weight-bold text-white">MARŠRUTAS</h2>
-                <form action="">
+                @* <form action=""> *@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="form-group">
@@ -38,17 +38,63 @@
                                 <input type="text" class="form-control mt-2" placeholder="Vieta į kur vykstama:" required>
                             </div>
                         </div>
-                    <br><br>
-                    <br><br>
+                        <br><br>
+                        <br><br>
                     </div>
                     <div class="col-12">
-                        <button class="btn btn-light" type="submit">Patvirtinti</button>
+                        <button class="btn btn-light" type="submit" id="submitBtn">Patvirtinti</button>
                     </div>
                     
-                </form>
+                @* </form> *@
             </div>
         </div>
     </div>
 </div>
+<script>
+        let map;
+        let markersArray = []
+        const mapId = document.getElementById("map");
+        const submitBtn = document.getElementById("submitBtn");
+        var i = 0;
+        
+        function initMap() {
+          
+          map = new google.maps.Map(mapId, {
+            center: {lat: 54.685, lng: 25.279},
+            zoom: 8
+          });
+          
+          map.addListener('click', function(e) {
+            console.log(e);
+            addMarker(e.latLng);
+          });
+          
+          submitBtn.addEventListener('click', function (e){
+             coord = {lat: 54.727, lng: 25.267};
+            
+                map = new google.maps.Map(mapId, {
+                center: coord,
+                zoom: 11
+                }); 
+              
+              addMarker({lat: 54.757, lng: 25.235});
+              addMarker({lat: 54.714, lng: 25.308});
+          });
+          
+        }
+        
+        function addMarker(latLng) {
+            
+            
+            
+            let marker = new google.maps.Marker({
+                map: map,
+                position: latLng,
+                draggable: true
+            });
+            
+            markersArray.push(marker);
+        }
+    </script>
 </body>
 
