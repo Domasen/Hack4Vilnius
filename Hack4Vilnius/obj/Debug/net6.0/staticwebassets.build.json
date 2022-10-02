@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "33i1KaScrqqNxfvQpWFkC4mzXaU9SWF6nxbiYFhoRI4=",
+  "Hash": "V+XFq0nC6Ll7hBhMpM5DqEoEu/mGe1VRw7CZl4QHnTQ=",
   "Source": "Hack4Vilnius",
   "BasePath": "_content/Hack4Vilnius",
   "Mode": "Default",
@@ -117,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\kalendorius.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\logo.jpg",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "img/logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\logobaltas.jpg",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "img/logobaltas.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logobaltas.jpg"
     },
     {
       "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\pokalbiai.jpg",
