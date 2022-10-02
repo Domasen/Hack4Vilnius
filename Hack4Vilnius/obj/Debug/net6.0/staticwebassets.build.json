@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BnlsgpC6ekhsmEM+DhzPSr9JXyNcNka4AHqb+xelU7Q=",
+  "Hash": "33i1KaScrqqNxfvQpWFkC4mzXaU9SWF6nxbiYFhoRI4=",
   "Source": "Hack4Vilnius",
   "BasePath": "_content/Hack4Vilnius",
   "Mode": "Default",
@@ -187,6 +187,23 @@
       "OriginalItemSpec": "wwwroot\\img\\profile2.jpg"
     },
     {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\profilis.jpg",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "img/profilis.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\profilis.jpg"
+    },
+    {
       "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\img\\spalva.jpg",
       "SourceId": "Hack4Vilnius",
       "SourceType": "Discovered",
@@ -219,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\spalva1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\js\\index.js",
+      "SourceId": "Hack4Vilnius",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\",
+      "BasePath": "_content/Hack4Vilnius",
+      "RelativePath": "js/index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\index.js"
     },
     {
       "Identity": "C:\\Users\\kamil\\Desktop\\hack4\\Hack4Vilnius\\Hack4Vilnius\\wwwroot\\js\\site.js",
