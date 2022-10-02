@@ -1,0 +1,8 @@
+﻿.destination{
+    display: inline-block;
+}
+
+#map{
+    height: 400%;
+    width: 100%;
+}
